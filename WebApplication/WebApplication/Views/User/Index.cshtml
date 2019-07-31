@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = null;
+    if (Session["Id"] == null)
+    {
+        Response.Redirect("~/Home/LogIn");
+    }
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DashBoard</title>
+</head>
+<body>
+    <div>
+        <h1>Dashboard</h1>
+        <h3>Username : @Session["Username"].ToString()</h3>
+        <h3>Firstname : @Session["FirstName"].ToString()</h3>
+        <h3>Lastname : @Session["LastName"].ToString()</h3>
+        <a href="@Url.Action("Logout","Home")">LogOut</a>
+    </div>
+</body>
+</html>
