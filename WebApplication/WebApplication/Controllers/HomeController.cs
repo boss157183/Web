@@ -94,5 +94,9 @@ namespace WebApplication.Controllers
             Session.Abandon();
             return RedirectToAction("LogIn", "Home");
         }
+        public ActionResult Chat()
+        {
+            return View();
+        }
     }
 }
