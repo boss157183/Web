@@ -5,8 +5,9 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="04dff55066ea40cabee430a055217361" Name="Diagram1">
-        <EntityTypeShape EntityType="WebAppDBModel.Access" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="WebAppDBModel.Person" Width="1.5" PointX="2.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebAppDBModel.Access" Width="1.5" PointX="0.625" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebAppDBModel.Person" Width="1.5" PointX="2.625" PointY="0.5" IsExpanded="true" />
+        <AssociationConnector Association="WebAppDBModel.FK_Access_ToTable" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

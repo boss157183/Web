@@ -19,6 +19,9 @@ namespace WebApplication.Models
         public string Username { get; set; }
         [DataType(DataType.Password)]
         public string Password { get; set; }
+        public Nullable<int> PersonId { get; set; }
+    
+        public virtual Person Person { get; set; }
         public string LoginError { get; set; }
     }
 }

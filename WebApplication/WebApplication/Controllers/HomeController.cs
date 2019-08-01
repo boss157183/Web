@@ -75,7 +75,7 @@ namespace WebApplication.Controllers
             var userDetails = db.Accesses.Where(x => x.Username == DataAccess.Username && x.Password == DataAccess.Password).FirstOrDefault();
             if (userDetails == null)
             {
-                DataAccess.LoginError = "Wrong Username or Password,";
+               DataAccess.LoginError = "Wrong Username or Password,";
                 return View("LogIn",DataAccess);
             }
             else
